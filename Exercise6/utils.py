@@ -319,7 +319,7 @@ def visualizeBoundary(X, y, model):
         vals[:, i] = svmPredict(model, this_X)
 
     pyplot.contour(X1, X2, vals, colors='y', linewidths=2)
-    pyplot.pcolormesh(X1, X2, vals, cmap='YlGnBu', alpha=0.25, edgecolors='None', lw=0)
+    pyplot.pcolormesh(X1, X2, vals, cmap='YlGnBu', alpha=0.25, edgecolors='None', lw=0, shading='auto')
     pyplot.grid(False)
 
 
